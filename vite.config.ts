@@ -10,6 +10,7 @@ export default defineConfig({
     target: 'esnext',
   },
   plugins: [react(), viteCompression()],
+  base: `/${process.env.BASE_PATH || ''}`,
   resolve: {
     alias: {
       src: path.resolve('src'),
