@@ -1,16 +1,10 @@
 const tailwindForms = require('@tailwindcss/forms');
-/** @type {import("tailwindcss/tailwind-config").TailwindConfig} */
-module.exports = {
+import { Config } from 'tailwindcss';
+
+/** @type {import('tailwindcss').Config} */
+const config: Config = {
   content: ['./src/**/*.{js,jsx,ts,tsx}', './index.html'],
   darkMode: ['class'], // or 'media' or false
-  variants: {
-    display: ['group-hover'],
-    transition: ['group-hover'],
-    extend: {
-      backgroundColor: ['active'],
-      textColor: ['active', 'hover'],
-    },
-  },
   theme: {
     extend: {
       boxShadow: {
@@ -31,5 +25,6 @@ module.exports = {
   corePlugins: {
     preflight: true,
   },
-  // important: 'body',
 };
+
+export default config;

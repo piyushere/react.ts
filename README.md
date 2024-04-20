@@ -1,4 +1,4 @@
-# Vite.JS typescript boilorplate for React.JS
+# React + Typescript boilorplate created using Vite
 
 ## Features
 

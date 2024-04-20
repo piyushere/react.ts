@@ -12,10 +12,11 @@ export default defineConfig({
   plugins: [react(), viteCompression()],
   resolve: {
     alias: {
-      src: path.resolve(__dirname, 'src'),
+      src: path.resolve('src'),
     },
   },
   server: {
+    port: 3000,
     proxy: {
       '/api': {
         target: 'http://localhost:8000',
