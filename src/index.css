@@ -19,56 +19,67 @@
   -webkit-text-size-adjust: 100%;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+@font-face {
+  font-family: 'Hubot Sans';
+  src:
+    url('/fonts/HubotSans.woff2') format('woff2 supports variations'),
+    url('/fonts/HubotSans.woff2') format('woff2-variations');
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+@font-face {
+  font-family: 'Mona Sans';
+  src:
+    url('/fonts/MonaSans.woff2') format('woff2 supports variations'),
+    url('/fonts/MonaSans.woff2') format('woff2-variations');
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.font-hubot {
+  font-family:
+    'Hubot Sans',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Helvetica,
+    Arial,
+    sans-serif,
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol';
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.font-mona {
+  font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas,
+    'Liberation Mono', monospace;
+}
+
+/* https://rsms.me/inter/ */
+/* @font-face {
+  font-family: InterUI;
+  src: url('/assets/fonts/Inter-UI-Regular.woff2') format('woff2');
+} */
+
+@font-face {
+  font-family: 'PxGroteskRegular';
+  src: url('/fonts/Px-Grotesk-Regular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'PxGroteskScreen';
+  src: url('/fonts/Px-Grotesk-Screen.woff2') format('woff2');
+  font-style: normal;
+  font-weight: normal;
+}
+
+.font-pxg {
+  font-family: 'PxGroteskRegular';
+}
+
+.font-pxg-scr {
+  font-family: 'PxGroteskScreen';
 }

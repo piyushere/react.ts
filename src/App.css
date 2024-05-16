@@ -1,4 +1,4 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -38,4 +38,40 @@
 
 .read-the-docs {
   color: #888;
+} */
+
+@keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes scroller {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.infinite-scroll {
+  animation: scroller infinite 200s linear;
+}
+
+.infinite-spin {
+  animation: spinner infinite 5s linear;
+}
+
+.rotating-door {
+  transform: translateX(400px) rotateY(120deg);
+  opacity: 0;
+}
+
+.move-origin {
+  transform-origin: 0px;
+  transition: all 800ms ease-out 0ms;
 }
